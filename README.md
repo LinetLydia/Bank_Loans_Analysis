@@ -12,6 +12,12 @@ The goal is to:
 ---
 
 ## **2. Dataset Description**
+### Dataset Access
+The dataset used in this project is available externally and can be downloaded from [Kaggle / source link].  
+To replicate this project:
+1. Download the dataset manually: https://www.kaggle.com/datasets/udaymalviya/bank-loan-data
+2. Place it in the project’s folder before running the notebook.
+
 The dataset contains **45,000 records** with the following key features:
 
 | Category | Feature | Description |
@@ -43,6 +49,10 @@ Define the goal — to assess credit risk and predict potential loan defaults to
 - Verified data completeness and quality.
 
 ### **Step 3: Data Preparation**
+### Database Setup
+To recreate the SQLite database used in this project:
+1. Download the `loan_data.csv` dataset (see Dataset Access section).
+2. Run the setup code in the notebook to automatically generate `loan_data.db`.
 - Imported the dataset into SQLite.
 - Checked table schema using `PRAGMA table_info()`.
 - Verified column names and data types for SQL analysis.
